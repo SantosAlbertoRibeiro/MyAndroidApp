@@ -1,5 +1,11 @@
-//Criar os metodos adequados referentes ao manejamento das listas expansíveis. HashMap, Arraylist.
+//Criar os metodos adequados ao manejamento das listas expansíveis. HashMap, Arraylist.
 //Remover grupos e ou itens do agrupamento.
 //Repor ou atualizar itens.
 //Adicionar novos itens (aumentar) uma lista existente.
-//Atualizar a ExpandableListView ao decorrer das alterções de dados.
+//Atualizar a ExpandableListView ao decorrer das alterações de dados.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//Create Suitable methods for Expandable List management. HashMap, Arraylist.
+//To remove groups and or grouped items.
+//To replace or update items.
+//Add New items (to increase) an existing list.
+//Update the ExpandableListView along data changes.
