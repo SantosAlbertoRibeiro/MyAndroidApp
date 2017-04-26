@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sclview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaterTank" >
+
+    <LinearLayout
+        android:id="@+id/lnrscl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rltcalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/steelback"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:id="@+id/txtletsgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/roundedwhite"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="@string/letsgo"
+                android:textColor="@color/Red"
+                android:textStyle="bold" />
+
+            <ExpandableListView
+                android:id="@+id/explsttank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtSelec"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtletsgo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:choiceMode="singleChoice"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:longClickable="false"
+                android:nestedScrollingEnabled="true"
+                android:overScrollMode="ifContentScrolls"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="horizontal|vertical"
+                android:visibility="visible" >
+
+            </ExpandableListView>
+
+            <TextView
+                android:id="@+id/txtSelec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtResult"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/roundedwhite"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/option"
+                android:textColor="@color/Black"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/chrono"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/roundedorange"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp"
+                android:text="@string/remain"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/chrono"
+                android:layout_width="230dp"
+                android:layout_height="80dp"
+                android:layout_above="@+id/btncr"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/lcd"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:inputType="text|number"
+                android:longClickable="true"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:scrollbars="none"
+                android:shadowColor="#000000"
+                android:shadowDx="-2"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="@string/crn"
+                android:textColor="#2a2a2a"
+                android:textSize="31sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btncr"
+                android:layout_width="122dp"
+                android:layout_height="68dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/btn_default"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:includeFontPadding="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
